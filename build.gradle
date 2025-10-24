@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+group = 'pl.rad'
+version = '1.0'
+
+java {
+    toolchain { languageVersion = JavaLanguageVersion.of(25) }
+}
+
+repositories { mavenCentral() }
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.11.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+}
+
+javafx {
+    version = '23.0.1'           // stabilna wersja działa z JDK 25
+    modules = [ 'javafx.controls' ]
+}
+
+application {
+    mainClass = 'pl.rad.projekt_ares.Main'
+}
+
+tasks.test { useJUnitPlatform() }

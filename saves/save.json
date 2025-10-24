@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "playerName": "Bohater",
+  "playerHp": 30,
+  "playerMaxHp": 30,
+  "playerX": 14,
+  "playerY": 2,
+  "unlockedRegions": [
+    "R1"
+  ]
+}
